@@ -30,7 +30,7 @@ camera.position.z = 5;
 const geoCube01 = new BoxGeometry(1,1,1);
 const matCube01_fill = new MeshBasicMaterial( { color: 0x00ff00, } );
 const matCube01_stroke = new MeshBasicMaterial( { color: 0x000000, wireframe: true, wireframe_linewidth: 5 } );
-const cube01 = new Mesh( geoCube01, [matCube01_stroke, matCube01_fill] );
+const cube01 = new Mesh( geoCube01, matCube01_fill );
 scene.add(cube01);
 
 function animate() {
